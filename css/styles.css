@@ -112,8 +112,7 @@ main {
 
 .nav-list-item {
   font-weight: 500;
-  padding: 24px 0;
-}
+ }
 
 .nav-list-item:not(:last-child) {
   margin-right: 40px;
@@ -125,6 +124,7 @@ main {
 
 .nav-link {
   color: var(--dark);
+  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -207,6 +207,7 @@ main {
   color: var(--dark);
   background-color: var(--white-background);
   margin-bottom: 8px;
+  text-align: center;
 }
 
 /* BENEFITS */
@@ -215,15 +216,14 @@ main {
   position: absolute;
   width: 1px;
   height: 1px;
-  clip-path: inset(100%);
-  clip: rect(0px, 0px, 0px, 0px);
   margin: -1px;
-  border-width: 0px;
-  border-style: initial;
-  border-color: initial;
-  border-image: initial;
-  padding: 0px;
+  border: 0;
+  padding: 0;
+
   white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .benefit-list {
