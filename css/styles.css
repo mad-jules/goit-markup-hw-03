@@ -112,7 +112,7 @@ main {
 
 .nav-list-item {
   font-weight: 500;
- }
+}
 
 .nav-list-item:not(:last-child) {
   margin-right: 40px;
@@ -194,8 +194,7 @@ main {
 }
 
 .hero-button:hover,
-.hero-button:focus,
-.hero-button:active {
+.hero-button:focus {
   background-color: var(--pressed-state);
 }
 
@@ -207,7 +206,6 @@ main {
   color: var(--dark);
   background-color: var(--white-background);
   margin-bottom: 8px;
-  text-align: center;
 }
 
 /* BENEFITS */
@@ -237,6 +235,10 @@ main {
 
 .benefit-item:not(:nth-child(4n)) {
   margin-right: 24px;
+}
+
+.benefit-subtitle {
+  text-align: start;
 }
 
 /* OUR TEAM */
@@ -275,11 +277,9 @@ main {
 
 .team-member {
   padding: 32px 0;
-}
-
-.team-text {
   text-align: center;
 }
+
 /* PORTFOLIO */
 
 .portfolio-list {
@@ -292,7 +292,6 @@ main {
   display: flex;
   flex-direction: column;
   flex-basis: calc((100% - 2 * 24px) / 3);
-  padding-bottom: 32px;
 }
 .portfolio-list-item:not(:nth-child(3n)) {
   margin-right: 24px;
