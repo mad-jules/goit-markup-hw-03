@@ -48,8 +48,7 @@ img {
 
 .container {
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -78,19 +77,18 @@ main {
 
 /* HEADER */
 
-header {
+.header {
   border-bottom: 1px solid var(--acent);
 }
 .header-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
   align-items: center;
 }
 .navigation {
   display: flex;
   margin-right: auto;
+  align-items: center;
 }
 .logo-header,
 .logo-footer {
@@ -103,12 +101,18 @@ header {
   color: var(--primary-brand);
 }
 
+.logo-header {
+  margin-right: 76px;
+  padding: 24px 0;
+}
+
 .header-studio {
   color: var(--dark);
 }
 
 .nav-list-item {
   font-weight: 500;
+  padding: 24px 0;
 }
 
 .nav-list-item:not(:last-child) {
@@ -117,7 +121,6 @@ header {
 
 .nav-list {
   display: flex;
-  margin-left: 76px;
 }
 
 .nav-link {
@@ -147,6 +150,10 @@ header {
   margin-right: 40px;
 }
 
+.contact-list-item {
+  padding: 24px 0;
+}
+
 .contacts {
   margin-left: auto;
 }
@@ -159,13 +166,15 @@ header {
 }
 
 .hero-title {
+  max-width: 496px;
+
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white-background);
   text-align: center;
-  margin-bottom: 48px;
+  margin: 0 auto 48px auto;
 }
 
 .hero-button {
@@ -178,7 +187,10 @@ header {
   color: var(--white-background);
   background-color: var(--primary-brand);
   cursor: pointer;
-  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -254,17 +266,20 @@ header {
   background-color: var(--white-background);
   flex-direction: column;
   align-items: center;
-  padding-bottom: 32px;
-}
-
-.team-list-item img {
-  margin-bottom: 32px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-item:not(:nth-child(4n)) {
   margin-right: 24px;
 }
 
+.team-member {
+  padding: 32px 0;
+}
+
+.team-text {
+  text-align: center;
+}
 /* PORTFOLIO */
 
 .portfolio-list {
@@ -288,9 +303,7 @@ header {
 }
 
 .border {
-  padding-left: 16px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
   border-bottom: 1px solid var(--acent);
   border-right: 1px solid var(--acent);
   border-left: 1px solid var(--acent);
@@ -312,6 +325,6 @@ header {
 }
 
 .logo-footer {
-  display: block;
+  display: inline-block;
   margin-bottom: 16px;
 }
